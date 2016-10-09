@@ -1,4 +1,4 @@
-package com.xiaozhejun.traverse;
+package com.xiaozhejun.storage;
 
 public class AdjacencyMatrix {
 	// 无向图matrix1

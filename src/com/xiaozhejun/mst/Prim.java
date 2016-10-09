@@ -1,6 +1,6 @@
 package com.xiaozhejun.mst;
 
-import com.xiaozhejun.traverse.AdjacencyMatrix;
+import com.xiaozhejun.storage.AdjacencyMatrix;
 
 public class Prim {
 

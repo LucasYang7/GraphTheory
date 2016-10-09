@@ -3,6 +3,8 @@ package com.xiaozhejun.traverse;
 import java.util.ArrayList;
 import java.util.Stack;
 
+import com.xiaozhejun.storage.AdjacencyMatrix;
+
 public class DFS {
 
 	/**

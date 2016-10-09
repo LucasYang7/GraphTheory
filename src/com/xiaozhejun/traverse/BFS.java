@@ -3,6 +3,8 @@ package com.xiaozhejun.traverse;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+import com.xiaozhejun.storage.AdjacencyMatrix;
+
 public class BFS {
 	
 	/**
