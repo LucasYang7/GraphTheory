@@ -13,7 +13,7 @@ public class Prim {
 	 * @param isInMST　标记图中某个顶点是否在MST中
 	 */
 	public int findMinDistToMST(int[] distToMST,boolean[] isInMST){
-		int min_dist = Integer.MAX_VALUE;
+		int min_dist = Integer.MAX_VALUE;  // 表示当前尚未加入MST且距离MST最近的顶点
 		int min_index = -1;                // 尚未加入MST中且距离MST最近的顶点编号
 		for(int v = 0;v < V;v++){
 			if(isInMST[v] == false && distToMST[v] < min_dist){
