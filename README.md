@@ -1,2 +1,3 @@
-DFS,BFS
+DFS,BFS,Prim,Kruskal
+
 
