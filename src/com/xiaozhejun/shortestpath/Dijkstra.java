@@ -31,11 +31,12 @@ public class Dijkstra {
 			visited[curVisitNode] = true;
 			// 将curVisitNode顶点加入到已求出最短路径的顶点集合后，更新图中其余各个顶点到start顶点的最短距离
 			for(int j = 0;j < numberOfNodes;j++){
-				// graphAdj[curVisitNode][j] != MAX保证curVisitNode与j顶点之间有一条边
-				// 如果graphAdj[curVisitNode][j] == MAX，那么 dist[curVisitNode] + graphAdj[curVisitNode][j] < 0
-				int minDistance = dist[curVisitNode] + graphAdj[curVisitNode][j];
-				if(minDistance >= 0 && minDistance < dist[j]){
-					dist[j] = minDistance;
+				// graphAdj[curVisitNode][j] != Integer.MAX_VALUE保证curVisitNode与j顶点之间有一条边
+				if(graphAdj[curVisitNode][j] != Integer.MAX_VALUE){
+					int minDistance = dist[curVisitNode] + graphAdj[curVisitNode][j];
+					if(minDistance < dist[j]){
+						dist[j] = minDistance;
+					}
 				}
 			}
 		}
